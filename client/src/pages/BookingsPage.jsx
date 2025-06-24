@@ -1,4 +1,6 @@
+// src/pages/BookingsPage.js
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { bookingService } from '../services/bookingService';
 import BookingCard from '../components/BookingCard';
 import LoadingSpinner from '../components/LoadingSpinner';
@@ -90,12 +92,12 @@ const BookingsPage = () => {
         <div className="text-center py-12">
           <div className="text-gray-500 text-lg mb-4">No bookings found</div>
           <p className="text-gray-400 mb-6">You haven't booked any tests yet.</p>
-          <a
-            href="/tests"
+          <Link
+            to="/tests"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors"
           >
             Browse Available Tests
-          </a>
+          </Link>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
