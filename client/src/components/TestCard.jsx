@@ -13,7 +13,7 @@ const TestCard = ({ test, onBook }) => {
       <div className="space-y-2 mb-4">
         <div className="flex justify-between">
           <span className="text-gray-600">Price:</span>
-          <span className="font-semibold">${test.price}</span>
+          <span className="font-semibold">₹{test.price}</span>
         </div>
         <div className="flex justify-between">
           <span className="text-gray-600">Duration:</span>
