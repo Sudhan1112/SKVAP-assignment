@@ -1,0 +1,27 @@
+meta {
+  name: REGISTER CHECKING
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8000/api/auth/register
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "Jane Doe",
+    "email": "jane@example.com",
+    "password": "123456",
+    "phone": "9876543219",
+    "dateOfBirth": "1993-05-12",
+    "gender": "female"
+  }
+  
+}

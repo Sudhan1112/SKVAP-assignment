@@ -1,0 +1,26 @@
+meta {
+  name: Booking a test
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8000/api/bookings/book
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXRpZW50SWQiOiI2ODVhZDkyMjYzYmI5MTYwMWY1YWZiMTciLCJpYXQiOjE3NTA3ODQyOTAsImV4cCI6MTc1MTM4OTA5MH0.hXiSpBcQRKniejSSWfkrwJZf7tqY7Fa79-SpWEnnjd8
+}
+
+body:json {
+  {
+    "testId": "685adfe963bb91601f5afb1d",
+    "bookingDate": "2025-07-01",
+    "preferredTime": "morning",
+    "notes": "Need home sample collection"
+  }
+  
+}

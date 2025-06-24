@@ -1,0 +1,11 @@
+meta {
+  name: fetch all active tests
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8000/api/tests
+  body: json
+  auth: none
+}
